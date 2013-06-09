@@ -29,14 +29,14 @@ for pi=1:psz
             bw = features{fi, si, pi}.project;
             if(si == 2)
             pro = [pro; reshape(bw,1,[])];
-            tr = [tr; 1,1];
+            tr = [tr; 1,0,0];
             elseif(si == 6)
             pro = [pro; reshape(bw,1,[])];
-            tr = [tr; 1,0];
+            tr = [tr; 0,1,0];
                 
             elseif(si == 8)
             pro = [pro; reshape(bw,1,[])];
-            tr = [tr; 0,1];
+            tr = [tr; 0,0,1];
             end
         end
     end
